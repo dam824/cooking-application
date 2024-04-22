@@ -16,7 +16,6 @@ const HomePage = () => {
 
   }
 
-  
   return (
     <div className="flex-fill container p-20 ">
       <div className={styles.headerGrid}>
