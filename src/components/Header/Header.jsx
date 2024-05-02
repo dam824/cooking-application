@@ -10,7 +10,7 @@ import { RiLoginCircleLine } from "react-icons/ri";
 import { VscAccount } from "react-icons/vsc";
 import NavMobile from "../NavMenu/NavMobile";
 
-const Header = () => {
+const Header = ({setPage}) => {
   const [showMenu, setShowMenu] = useState(false);
 
 const handleClickMobile = () => {
@@ -37,16 +37,17 @@ return() => {
        {showMenu && 
        <>
       <div onClick={() => setShowMenu(false)} className="calc"></div>
-       <NavMobile /> 
+       <NavMobile setPate={setPage} /> 
        </>   
        }
       <div className="flex-fill">
-        <img src={logo} alt="logo" />
+        <img onClick={()=>setPage('homepage')} src={logo} alt="logo" />
       </div>
       <ul className={styles.navDesktop}>
-        <button className="mr-5 btn btn-primary">< SlBasket className="mr-5" />Panier</button>
-       <button className="mr-5 btn btn-primary"> <VscAccount className="mr-5" />Compte</button>
-       <button className="btn btn-primary">< RiLoginCircleLine className="mr-5" />Register</button>
+        <button  onClick={()=> setPage('admin')}className="mr-5 btn btn-primary mr-5">+</button>
+        <button className="mr-5 btn btn-primary">< SlBasket className="mr-5" /></button>
+       <button className="mr-5 btn btn-primary"> <VscAccount className="mr-5" /></button>
+       <button className="btn btn-primary">< RiLoginCircleLine className="mr-5" /></button>
       </ul>
       
     </header>

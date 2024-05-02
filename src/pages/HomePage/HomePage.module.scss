@@ -17,22 +17,6 @@
     }
 }
 
-.search{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 10px;
-    input{
-        height: 30px;
-        width: 200px;
-        border: none;
-        border-radius: 20px;
-        padding-left: 10px;
-        
-    }
-}
 
 .grid{
     display: grid;
@@ -64,3 +48,7 @@
     width: 100%;
 }
 
+.small{
+    font-size: 12px;
+    font-weight: 500;
+}

@@ -10,6 +10,7 @@
      
     img{
         width: 150px;
+        cursor: pointer;
         @include mixin.xs{
             margin-left: 20%;
         }  

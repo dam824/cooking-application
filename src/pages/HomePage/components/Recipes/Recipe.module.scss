@@ -4,7 +4,7 @@
         position: relative;
         overflow: hidden;
         height: 100%;
-         
+        
         cursor: pointer;
         transition: all 0.5s ease;
         &:hover{
@@ -19,13 +19,18 @@
                 opacity: 1;
             }
         }
+       
 }
+
+
 
 .recipeImage{
     position: relative;
     height: 100%;
     object-position: center;
 
+  
+   
     img{
         border-radius: 20px;
         display: block;  
@@ -58,6 +63,7 @@
     transition: transform 0.5s ease;
     h3{
         font-size: 34px;
+        font-family: var(--font-family);
     }
 }
 
@@ -71,7 +77,9 @@
     color: white;
     padding: 20px;
     opacity: 0;
-    svg{
-        font-size: 30px;
-    }
+    display:flex;
+    justify-content: center;
+    
+   
 }
+ 
